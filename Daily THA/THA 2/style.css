@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+}
+.head{
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+    padding: 10px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    
+
+    
+}
+body{
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+.letter{
+    background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+    padding-left: 10px;
+    padding-top: 15px;
+    padding-bottom: 5vh;
+    font-size: 20px;
+    padding-right: 10px;
+
+}
+p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
