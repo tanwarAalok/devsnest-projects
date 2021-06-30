@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+}
+img{
+    float: left;
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    margin-left: 50px;
+}
+header{
+    height: 200px;
+}
+h1,#pp{
+    padding-left: 36%;
+    letter-spacing: 4px;
+    font-family: 'Nunito',sans-serif;   
+}
+h1{
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding-top: 40px;
+}
+#pp{
+    font-size: 25px;
+}
+header h2{
+    border-top: 3px solid lightblue;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.content-left{
+    width: 50%;
+    float: left;
+    padding: 15px;
+}
+.content{
+    display: table;
+    clear: both;
+}
+.content-right{
+    width: 50%;
+    float: right;
+    padding: 15px;
+}
+body{
+    border-style: solid;
+    border-color: black;
+}
+a{
+    text-decoration: none;
+    color: rgb(18, 179, 243);
+}
