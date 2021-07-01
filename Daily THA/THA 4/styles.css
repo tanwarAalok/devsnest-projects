@@ -1,0 +1,65 @@
+.circle{
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: rgb(197, 8, 8);
+    border-width: 20px;
+    position: relative;
+
+}
+
+body{
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.minute, .hour, .second{
+    position: absolute;
+    background: black;
+    border-radius: 10px;
+}
+.hour{
+    top: 22%;
+    left: 51%;
+    width: 1.5%;
+    height: 30%;
+    animation: rotate 43200s infinite linear;
+    transform-origin: 49.8% 100%;
+    
+    
+}
+.minute{
+    top: 15%;
+    left: 51%;
+    width: 1.5%;
+    height: 37%;
+    animation: rotate 3600s infinite linear;
+    transform-origin: 49.8% 100%;
+    
+}
+.second{
+    top: 14%;
+    left: 52%;
+    width: 0.1%;
+    height: 38%;
+    animation: rotate 60s infinite steps(60);
+    transform-origin: 49.8% 100%;
+    
+}
+.dot{
+    border-radius: 50%;
+    background-color: black;
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    left: 49.8%;
+    top: 50%;
+
+}
+@keyframes rotate {
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
