@@ -14,24 +14,58 @@
     color: white;
 }
 
-.number{
-    position: relative;
-    font-size: 150px;
-    font-weight: bold;
-    letter-spacing: -10px;
-    top: 13%;
-    left: 16%;
+.one{
+    position: absolute;
+    top: 27.2%;
+    left: 30%;
+    height: 100px;
+    width: 20px;
+    background-color: white;
+    border-radius: 7%;
+}
+.one-second{
+    background-color: white;
+    position: absolute;
+    height: 50px;
+    width: 20px;
+    top: 14.5%;
+    left: 25%;
+    transform: rotate(220deg);
+    transform-origin: bottom right;
+    border-radius: 10%;
+}
+.zero-one{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 20px;
+    border-color: white;
+    top: 28%;
+    left: 33%;
+}
+.zero-two{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 20px;
+    border-color: white;
+    top: 28%;
+    left: 54%;
 }
 .days{
-    position: relative;
+    position: absolute;
     font-size: 80px;
-    top: 5%;
-    left: 23%;
+    top: 50%;
+    left: 27%;
 }
 .last{
-    position: relative;
+    position: absolute;
     font-size: 25px;
-    top: 5%;
-    left: 24%;
+    top: 70%;
+    left: 27%;
 }
 
