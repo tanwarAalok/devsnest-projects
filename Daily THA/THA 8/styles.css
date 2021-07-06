@@ -1,0 +1,37 @@
+
+
+.box{
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+
+.number{
+    position: relative;
+    font-size: 150px;
+    font-weight: bold;
+    letter-spacing: -10px;
+    top: 13%;
+    left: 16%;
+}
+.days{
+    position: relative;
+    font-size: 80px;
+    top: 5%;
+    left: 23%;
+}
+.last{
+    position: relative;
+    font-size: 25px;
+    top: 5%;
+    left: 24%;
+}
+
