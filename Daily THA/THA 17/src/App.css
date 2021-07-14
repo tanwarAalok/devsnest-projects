@@ -1,0 +1,46 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  margin-left: 30em;
+  margin-top: 5em;
+  padding: 10px;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  background-color: white;
+  width: 40%;
+  height: 30em;
+  background-color: #000000d0;
+  border-radius: 5%;
+}
+.card{
+  width: 35em;
+  height: 20%;
+  background-color: #7c7c7c2b;
+  border:1px solid black;
+  padding: 10px;
+  border-radius: 5%;
+  color: #fff;
+  margin: 5px;
+}
+card:hover{
+  background-color: #000000d0;
+  cursor: pointer;
+}
+.App{
+  padding-top:5%;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://source.unsplash.com/1600x900/?food");
+}
+.head{
+  margin-left: 15.5em;
+  font-size: 40px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: white;
+  background: #000000d0;
+  width: fit-content;
+  border-radius: 5%;
+}
