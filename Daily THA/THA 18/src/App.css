@@ -1,0 +1,21 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  margin-left: 38em;
+  margin-top: 13em;
+  border-style: solid;
+  border-color: black;
+  border-width: 10px;
+  width: 380px;
+  height: 327px;
+}
+.card{
+  display: inline-block;
+  margin: 0;
+  width: 45px;
+  height: 35px;
+  background-color: black;
+}
