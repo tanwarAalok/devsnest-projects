@@ -1,0 +1,40 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App{
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+.App button{
+  padding: 5px;
+  font-size: 1rem;
+  background-color: #0d6efd;
+  color: white;
+  border-radius: 5%;
+  box-shadow: 1px 3px;
+  width: 23rem;
+}
+.App button:hover{
+  cursor: pointer;
+  opacity: 0.9;
+}
+.App input{
+  padding: 6px;
+  margin: 10px;
+}
+.main{
+  margin-top: 30px;
+  border: 0.02px ridge rgba(0, 0, 0, 0.418);
+  padding: 20px;
+  padding-right: 40px;
+}
+.main button{
+  background-color: red;
+  margin-top: 10px;
+  width: 5rem;
+}
