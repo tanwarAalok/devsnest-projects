@@ -1,20 +1,14 @@
 import React, { useState, useCallback } from "react";
-import "./App.css"
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import "./App.css";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 const useToggle = (initialState = false) => {
   const [state, setState] = useState(initialState);
-  
-  const toggle = useCallback(() => setState(state => !state), []);
-  
-  
-  return [state, toggle]
-}
+
+  const toggle = useCallback(() => setState((state) => !state), []);
+
+  return [state, toggle];
+};
 
 function Home() {
   return (
@@ -29,21 +23,23 @@ function About() {
   return <h2>About</h2>;
 }
 
-function Profile() {
-  return <h2>Profile</h2>;
+function Profile(props) {
+  return <div>{props.condition ? <h2>Profile</h2> : "Can't access without Login"}</div>;
 }
 
-function Dashboard() {
-  return <h2>Dashboard</h2>;
+function Dashboard(props) {
+  return (
+    <div>{props.condition ? <h2>Dashboard</h2> : "Can't access without Login"}</div>
+  );
 }
 
-function App(){
+function App() {
   const [isTextChanged, setIsTextChanged] = useToggle();
-  return(
+  return (
     <Router>
       <div className="app">
         <nav>
-          <ul className="nav">
+          <ul>
             <li>
               <Link to="/">Home</Link>
             </li>
@@ -59,22 +55,26 @@ function App(){
           </ul>
         </nav>
 
-        <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/profile">
-            <Profile />
-          </Route>
-          <Route path="/dashboard">
-            <Dashboard />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
+        <div className="main">
+          <Switch>
+            <Route path="/about">
+              <About />
+            </Route>
+            <Route path="/profile">
+              <Profile condition={isTextChanged} />
+            </Route>
+            <Route path="/dashboard">
+              <Dashboard condition={isTextChanged} />
+            </Route>
+            <Route path="/">
+              <Home />
+            </Route>
+          </Switch>
 
-        <button onClick={setIsTextChanged}>{isTextChanged ? 'Logout' : 'Login'}</button>
+          <button onClick={setIsTextChanged}>
+            {isTextChanged ? "Logout" : "Login"}
+          </button>
+        </div>
       </div>
     </Router>
   );
