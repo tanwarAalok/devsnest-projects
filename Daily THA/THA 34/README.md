@@ -1,1 +1,1 @@
-##Todo list using Redux in Typescript
+Todo list using Redux in Typescript
