@@ -1,1 +1,1 @@
-# E-commerse Project made using Redux & Javascript
+# E-commerse Project using Redux & Javascript
