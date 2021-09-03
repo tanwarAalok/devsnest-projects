@@ -1,1 +1,0 @@
-This is practice of git .
