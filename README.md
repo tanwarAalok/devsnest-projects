@@ -1,7 +1,7 @@
 # Devsnest-projects
 ### Some Frontend Projects -                                                            
 1) Memory Game : https://memory-game-tha10.netlify.app/    
-2) Instagram Clone: https://instagram-clone-aalok.netlify.app/
+2) <a href="">Instagram Clone</a>: https://instagram-clone-aalok.netlify.app/
 3) E-commerce: https://e-commerce-redux.netlify.app/
 4) Weather App: https://weather-app-aalok.netlify.app/
 
