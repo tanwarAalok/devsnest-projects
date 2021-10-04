@@ -1,0 +1,1 @@
+POSt http://localhost:3000/payment
